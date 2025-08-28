@@ -454,6 +454,12 @@ body {
     border: 2px solid #667eea;
 }
 
+.pricing-card.highlight {
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.35), 0 30px 60px rgba(0, 0, 0, 0.4);
+    transform: scale(1.07);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
 .pricing-badge {
     position: absolute;
     top: -15px;

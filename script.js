@@ -234,15 +234,19 @@ bookButtons.forEach(button => {
     });
 });
 
-// Hero booking button
+// Hero booking button → scroll to pricing section and highlight featured package
 const heroBookBtn = document.querySelector('.hero-book-btn');
 if (heroBookBtn) {
     heroBookBtn.addEventListener('click', () => {
-        document.getElementById('bookingPackage').value = 'Discovery Session';
-        document.getElementById('bookingPrice').value = '$150';
-        
-        modal.style.display = 'block';
-        document.body.style.overflow = 'hidden';
+        const pricingSection = document.getElementById('pricing');
+        if (pricingSection) {
+            pricingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const featured = pricingSection.querySelector('.pricing-card.featured');
+            if (featured) {
+                featured.classList.add('highlight');
+                setTimeout(() => featured.classList.remove('highlight'), 2000);
+            }
+        }
     });
 }
 
