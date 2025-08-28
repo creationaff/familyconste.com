@@ -460,6 +460,154 @@ const translations = {
         'contact-info': 'Контактная информация',
         'privacy-policy': 'Политика конфиденциальности',
         'copyright': '© 2024 Семейные расстановки Софии. Все права защищены.'
+    },
+    es: {
+        // Navigation
+        'home': 'Inicio',
+        'services': 'Servicios',
+        'pricing': 'Precios',
+        'about': 'Acerca de',
+        'practitioner': 'Especialista',
+        'contact': 'Contacto',
+        
+        // Hero Section
+        'hero-title': 'Sanación Espiritual Familiar a través de Constelaciones',
+        'hero-subtitle': 'Descubre la dinámica oculta en tu sistema familiar. Experimenta una sanación profunda a través del juego de roles guiado y la exploración espiritual de patrones generacionales.',
+        'book-consultation': 'Reservar Consulta',
+        'learn-more': 'Saber Más',
+        
+        // Services Section
+        'services-title': 'Servicios Sagrados de Sanación',
+        'services-subtitle': 'Transforma la dinámica de tu familia a través del trabajo espiritual de constelaciones y sesiones de sanación guiadas',
+        'family-constellations': 'Constelaciones Familiares',
+        'family-constellations-desc': 'Sesiones grupales sagradas donde los participantes representan miembros de la familia, revelando dinámicas ocultas y facilitando la sanación profunda a través del juego de roles.',
+        'relationship-constellations': 'Constelaciones de Relaciones',
+        'relationship-constellations-desc': 'Exploración profunda de la dinámica de relaciones a través del juego de roles espiritual, descubriendo patrones ocultos y facilitando la sanación a nivel del alma.',
+        'generational-healing': 'Sanación Generacional',
+        'generational-healing-desc': 'Libera patrones familiares heredados y trauma a través del trabajo de constelaciones guiado, creando sanación para las generaciones futuras.',
+        'virtual-constellations': 'Constelaciones Virtuales',
+        'virtual-constellations-desc': 'Experimenta el poder de las constelaciones familiares a través de sesiones sagradas en línea, conectando con el campo colectivo desde cualquier lugar.',
+        'ancestral-wisdom': 'Sabiduría Ancestral',
+        'ancestral-wisdom-desc': 'Conéctate con el conocimiento y la sabiduría ancestral a través de la meditación guiada y el trabajo de constelaciones, honrando el linaje espiritual de tu familia.',
+        'soul-integration': 'Integración del Alma',
+        'soul-integration-desc': 'Trabajo espiritual profundo para integrar partes fragmentadas del alma y restaurar la plenitud a través de ceremonias de constelaciones guiadas.',
+        
+        // Pricing Section
+        'pricing-title': 'Paquetes Sagrados de Sanación',
+        'pricing-subtitle': 'Elige la experiencia perfecta de constelaciones para tu viaje de sanación',
+        'discovery-session': 'Sesión de Descubrimiento',
+        'deep-healing-package': 'Paquete de Sanación Profunda',
+        'transformation-journey': 'Viaje de Transformación',
+        'most-popular': 'Más Popular',
+        'book-now': 'Reservar Ahora',
+        
+        // About Section
+        'about-title': 'Acerca de Sofía y las Constelaciones Familiares',
+        'about-text-1': 'Sofía es una facilitadora sagrada del trabajo de constelaciones familiares, guiando a individuos y familias a través de la sanación espiritual profunda. Con más de 15 años de experiencia en terapia familiar sistémica y prácticas espirituales, ella crea espacios sagrados para la transformación y la sanación.',
+        'about-text-2': 'Su enfoque honra la sabiduría del campo colectivo, permitiendo que las dinámicas familiares ocultas emerjan a través del juego de roles guiado. Sofía cree que cada familia lleva el potencial para una sanación profunda cuando honramos el orden sagrado del amor.',
+        'souls-transformed': 'Almas Transformadas',
+        'years-experience': 'Años de Trabajo Sagrado',
+        'healing-rate': 'Tasa de Sanación',
+        
+        // Team Section
+        'team-title': 'Tu Guía Sagrada',
+        'team-subtitle': 'Conoce a Sofía, tu facilitadora dedicada de constelaciones familiares y guía espiritual',
+        'sofia-title': 'Facilitadora Sagrada de Constelaciones Familiares',
+        'sofia-bio': 'Guía espiritual dedicada con más de 15 años de experiencia en el trabajo de constelaciones familiares, ayudando a individuos y familias a descubrir dinámicas ocultas y facilitar la sanación profunda a través del juego de roles guiado y la exploración espiritual.',
+        
+        // Contact Section
+        'contact-title': 'Comienza tu Viaje Sagrado',
+        'contact-subtitle': '¿Listo para transformar la dinámica de tu familia a través del trabajo espiritual de constelaciones? Conéctate con Sofía en Instagram para comenzar tu viaje de sanación.',
+        'connect-instagram': 'Conectar en Instagram',
+        'sacred-space': 'Espacio Sagrado',
+        'sacred-hours': 'Horas Sagradas',
+        'instagram-contact-title': 'Conéctate con Sofía en Instagram',
+        'instagram-contact-desc': 'Para reservas, consultas y para aprender más sobre constelaciones familiares, por favor contacta a Sofía directamente en Instagram.',
+        'message-instagram': 'Mensaje @gypsiefamily',
+        
+        // Footer
+        'footer-title': 'Constelaciones Familiares de Sofía',
+        'footer-desc': 'Trabajo sagrado de constelaciones familiares y sanación espiritual para transformar la dinámica de tu familia y restaurar la armonía.',
+        'sacred-services': 'Servicios Sagrados',
+        'quick-links': 'Enlaces Rápidos',
+        'about-us': 'Acerca de Nosotros',
+        'contact-info': 'Información de Contacto',
+        'privacy-policy': 'Política de Privacidad',
+        'copyright': '© 2024 Constelaciones Familiares de Sofía. Todos los derechos reservados.'
+    },
+    fr: {
+        // Navigation
+        'home': 'Accueil',
+        'services': 'Services',
+        'pricing': 'Tarifs',
+        'about': 'À propos',
+        'practitioner': 'Praticienne',
+        'contact': 'Contact',
+        
+        // Hero Section
+        'hero-title': 'Guérison Spirituelle Familiale par les Constellations',
+        'hero-subtitle': 'Découvrez la dynamique cachée dans votre système familial. Expérimentez une guérison profonde à travers le jeu de rôles guidé et l\'exploration spirituelle des schémas générationnels.',
+        'book-consultation': 'Réserver une Consultation',
+        'learn-more': 'En Savoir Plus',
+        
+        // Services Section
+        'services-title': 'Services Sacrés de Guérison',
+        'services-subtitle': 'Transformez la dynamique de votre famille à travers le travail spirituel des constellations et les sessions de guérison guidées',
+        'family-constellations': 'Constellations Familiales',
+        'family-constellations-desc': 'Sessions de groupe sacrées où les participants représentent les membres de la famille, révélant les dynamiques cachées et facilitant la guérison profonde à travers le jeu de rôles.',
+        'relationship-constellations': 'Constellations de Relations',
+        'relationship-constellations-desc': 'Exploration profonde de la dynamique relationnelle à travers le jeu de rôles spirituel, découvrant des schémas cachés et facilitant la guérison au niveau de l\'âme.',
+        'generational-healing': 'Guérison Générationnelle',
+        'generational-healing-desc': 'Libérez les schémas familiaux hérités et les traumatismes à travers le travail de constellations guidé, créant la guérison pour les générations futures.',
+        'virtual-constellations': 'Constellations Virtuelles',
+        'virtual-constellations-desc': 'Expérimentez le pouvoir des constellations familiales à travers des sessions sacrées en ligne, vous connectant au champ collectif depuis n\'importe où.',
+        'ancestral-wisdom': 'Sagesse Ancestrale',
+        'ancestral-wisdom-desc': 'Connectez-vous avec la connaissance et la sagesse ancestrales à travers la méditation guidée et le travail de constellations, honorant la lignée spirituelle de votre famille.',
+        'soul-integration': 'Intégration de l\'Âme',
+        'soul-integration-desc': 'Travail spirituel profond pour intégrer les parties fragmentées de l\'âme et restaurer la plénitude à travers les cérémonies de constellations guidées.',
+        
+        // Pricing Section
+        'pricing-title': 'Forfaits Sacrés de Guérison',
+        'pricing-subtitle': 'Choisissez l\'expérience parfaite de constellations pour votre voyage de guérison',
+        'discovery-session': 'Session de Découverte',
+        'deep-healing-package': 'Forfait de Guérison Profonde',
+        'transformation-journey': 'Voyage de Transformation',
+        'most-popular': 'Le Plus Populaire',
+        'book-now': 'Réserver Maintenant',
+        
+        // About Section
+        'about-title': 'À propos de Sofia et des Constellations Familiales',
+        'about-text-1': 'Sofia est une facilitatrice sacrée du travail de constellations familiales, guidant les individus et les familles à travers la guérison spirituelle profonde. Avec plus de 15 ans d\'expérience en thérapie familiale systémique et pratiques spirituelles, elle crée des espaces sacrés pour la transformation et la guérison.',
+        'about-text-2': 'Son approche honore la sagesse du champ collectif, permettant aux dynamiques familiales cachées d\'émerger à travers le jeu de rôles guidé. Sofia croit que chaque famille porte le potentiel d\'une guérison profonde quand nous honorons l\'ordre sacré de l\'amour.',
+        'souls-transformed': 'Âmes Transformées',
+        'years-experience': 'Années de Travail Sacré',
+        'healing-rate': 'Taux de Guérison',
+        
+        // Team Section
+        'team-title': 'Votre Guide Sacrée',
+        'team-subtitle': 'Rencontrez Sofia, votre facilitatrice dédiée de constellations familiales et guide spirituelle',
+        'sofia-title': 'Facilitatrice Sacrée de Constellations Familiales',
+        'sofia-bio': 'Guide spirituelle dédiée avec plus de 15 ans d\'expérience dans le travail de constellations familiales, aidant les individus et les familles à découvrir les dynamiques cachées et à faciliter la guérison profonde à travers le jeu de rôles guidé et l\'exploration spirituelle.',
+        
+        // Contact Section
+        'contact-title': 'Commencez Votre Voyage Sacré',
+        'contact-subtitle': 'Prêt à transformer la dynamique de votre famille à travers le travail spirituel des constellations ? Connectez-vous avec Sofia sur Instagram pour commencer votre voyage de guérison.',
+        'connect-instagram': 'Se Connecter sur Instagram',
+        'sacred-space': 'Espace Sacré',
+        'sacred-hours': 'Heures Sacrées',
+        'instagram-contact-title': 'Connectez-vous avec Sofia sur Instagram',
+        'instagram-contact-desc': 'Pour les réservations, les demandes de renseignements et pour en savoir plus sur les constellations familiales, veuillez contacter Sofia directement sur Instagram.',
+        'message-instagram': 'Message @gypsiefamily',
+        
+        // Footer
+        'footer-title': 'Constellations Familiales de Sofia',
+        'footer-desc': 'Travail sacré de constellations familiales et guérison spirituelle pour transformer la dynamique de votre famille et restaurer l\'harmonie.',
+        'sacred-services': 'Services Sacrés',
+        'quick-links': 'Liens Rapides',
+        'about-us': 'À Propos',
+        'contact-info': 'Informations de Contact',
+        'privacy-policy': 'Politique de Confidentialité',
+        'copyright': '© 2024 Constellations Familiales de Sofia. Tous droits réservés.'
     }
 };
 
@@ -475,7 +623,7 @@ if (languageSelect) {
 function translatePage(language) {
     const currentTranslations = translations[language] || translations.en;
     
-    // Update navigation
+    // Update all elements with data-translate attribute
     document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
         if (currentTranslations[key]) {
@@ -483,20 +631,157 @@ function translatePage(language) {
         }
     });
     
-    // Update specific elements
-    const elements = {
+    // Update specific elements by selector
+    const elementSelectors = {
         '.hero-title': 'hero-title',
         '.hero-subtitle': 'hero-subtitle',
-        '.section-title': 'services-title',
-        '.section-subtitle': 'services-subtitle'
+        '.services .section-title': 'services-title',
+        '.services .section-subtitle': 'services-subtitle',
+        '.pricing .section-title': 'pricing-title',
+        '.pricing .section-subtitle': 'pricing-subtitle',
+        '.about .section-title': 'about-title',
+        '.team .section-title': 'team-title',
+        '.team .section-subtitle': 'team-subtitle',
+        '.contact .section-title': 'contact-title',
+        '.contact .section-subtitle': 'contact-subtitle'
     };
     
-    Object.entries(elements).forEach(([selector, key]) => {
+    Object.entries(elementSelectors).forEach(([selector, key]) => {
         const element = document.querySelector(selector);
         if (element && currentTranslations[key]) {
             element.textContent = currentTranslations[key];
         }
     });
+    
+    // Update service cards
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach((card, index) => {
+        const titles = ['family-constellations', 'relationship-constellations', 'generational-healing', 'virtual-constellations', 'ancestral-wisdom', 'soul-integration'];
+        const descs = ['family-constellations-desc', 'relationship-constellations-desc', 'generational-healing-desc', 'virtual-constellations-desc', 'ancestral-wisdom-desc', 'soul-integration-desc'];
+        
+        if (titles[index]) {
+            const titleElement = card.querySelector('h3');
+            if (titleElement && currentTranslations[titles[index]]) {
+                titleElement.textContent = currentTranslations[titles[index]];
+            }
+        }
+        
+        if (descs[index]) {
+            const descElement = card.querySelector('p');
+            if (descElement && currentTranslations[descs[index]]) {
+                descElement.textContent = currentTranslations[descs[index]];
+            }
+        }
+    });
+    
+    // Update pricing cards
+    const pricingCards = document.querySelectorAll('.pricing-card');
+    pricingCards.forEach((card, index) => {
+        const titles = ['discovery-session', 'deep-healing-package', 'transformation-journey'];
+        const badges = ['', 'most-popular', ''];
+        
+        if (titles[index]) {
+            const titleElement = card.querySelector('h3');
+            if (titleElement && currentTranslations[titles[index]]) {
+                titleElement.textContent = currentTranslations[titles[index]];
+            }
+        }
+        
+        if (badges[index]) {
+            const badgeElement = card.querySelector('.pricing-badge');
+            if (badgeElement && currentTranslations[badges[index]]) {
+                badgeElement.textContent = currentTranslations[badges[index]];
+            }
+        }
+    });
+    
+    // Update about section
+    const aboutTexts = document.querySelectorAll('.about-text p');
+    if (aboutTexts[0] && currentTranslations['about-text-1']) {
+        aboutTexts[0].textContent = currentTranslations['about-text-1'];
+    }
+    if (aboutTexts[1] && currentTranslations['about-text-2']) {
+        aboutTexts[1].textContent = currentTranslations['about-text-2'];
+    }
+    
+    // Update stats
+    const stats = document.querySelectorAll('.stat p');
+    const statKeys = ['souls-transformed', 'years-experience', 'healing-rate'];
+    stats.forEach((stat, index) => {
+        if (currentTranslations[statKeys[index]]) {
+            stat.textContent = currentTranslations[statKeys[index]];
+        }
+    });
+    
+    // Update team section
+    const teamMember = document.querySelector('.team-member');
+    if (teamMember) {
+        const titleElement = teamMember.querySelector('.member-title');
+        const bioElement = teamMember.querySelector('.member-bio');
+        
+        if (titleElement && currentTranslations['sofia-title']) {
+            titleElement.textContent = currentTranslations['sofia-title'];
+        }
+        if (bioElement && currentTranslations['sofia-bio']) {
+            bioElement.textContent = currentTranslations['sofia-bio'];
+        }
+    }
+    
+    // Update contact section
+    const contactItems = document.querySelectorAll('.contact-item h3');
+    const contactKeys = ['connect-instagram', 'sacred-space', 'sacred-hours'];
+    contactItems.forEach((item, index) => {
+        if (currentTranslations[contactKeys[index]]) {
+            item.textContent = currentTranslations[contactKeys[index]];
+        }
+    });
+    
+    // Update Instagram contact section
+    const instagramTitle = document.querySelector('.instagram-info h3');
+    const instagramDesc = document.querySelector('.instagram-info p');
+    const instagramBtn = document.querySelector('.instagram-btn');
+    
+    if (instagramTitle && currentTranslations['instagram-contact-title']) {
+        instagramTitle.textContent = currentTranslations['instagram-contact-title'];
+    }
+    if (instagramDesc && currentTranslations['instagram-contact-desc']) {
+        instagramDesc.textContent = currentTranslations['instagram-contact-desc'];
+    }
+    if (instagramBtn && currentTranslations['message-instagram']) {
+        instagramBtn.textContent = currentTranslations['message-instagram'];
+    }
+    
+    // Update footer
+    const footerTitle = document.querySelector('.footer-section h3');
+    const footerDesc = document.querySelector('.footer-section p');
+    const footerSections = document.querySelectorAll('.footer-section h4');
+    const footerLinks = document.querySelectorAll('.footer-section ul li a');
+    const copyright = document.querySelector('.footer-bottom p');
+    
+    if (footerTitle && currentTranslations['footer-title']) {
+        footerTitle.textContent = currentTranslations['footer-title'];
+    }
+    if (footerDesc && currentTranslations['footer-desc']) {
+        footerDesc.textContent = currentTranslations['footer-desc'];
+    }
+    
+    const footerKeys = ['sacred-services', 'quick-links', 'about-us', 'contact-info'];
+    footerSections.forEach((section, index) => {
+        if (currentTranslations[footerKeys[index]]) {
+            section.textContent = currentTranslations[footerKeys[index]];
+        }
+    });
+    
+    const linkKeys = ['about-us', 'practitioner', 'contact', 'privacy-policy'];
+    footerLinks.forEach((link, index) => {
+        if (currentTranslations[linkKeys[index]]) {
+            link.textContent = currentTranslations[linkKeys[index]];
+        }
+    });
+    
+    if (copyright && currentTranslations['copyright']) {
+        copyright.textContent = currentTranslations['copyright'];
+    }
 }
 
 // Add some interactive features
