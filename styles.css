@@ -333,6 +333,182 @@ body {
     color: white;
 }
 
+/* Pricing Section */
+.pricing {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #2c1810 0%, #4a1c40 50%, #1a1a2e 100%);
+    color: white;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.pricing-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-card.featured {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+    transform: scale(1.05);
+    border: 2px solid #ff6b6b;
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff6b6b;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.pricing-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.price {
+    margin-bottom: 2rem;
+}
+
+.currency {
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+
+.amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ff6b6b;
+}
+
+.period {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.pricing-features ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.pricing-features li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.pricing-features i {
+    color: #4CAF50;
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.pricing-action {
+    margin-top: auto;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: white;
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.booking-form {
+    margin-top: 1rem;
+}
+
+.booking-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    outline: none;
+    border-color: #2c5aa0;
+}
+
+.booking-form input[readonly] {
+    background-color: #f8f9fa;
+    color: #666;
+}
+
 /* Team Section */
 .team {
     padding: 5rem 0;
@@ -626,6 +802,20 @@ body {
 
     .service-card,
     .team-member {
+        padding: 1.5rem;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-card.featured {
+        transform: none;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
         padding: 1.5rem;
     }
 }

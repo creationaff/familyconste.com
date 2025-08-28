@@ -24,6 +24,9 @@
                     <a href="#services" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
                     <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
@@ -107,6 +110,88 @@
                     </div>
                     <h3>Soul Integration</h3>
                     <p>Deep spiritual work to integrate fragmented parts of the soul and restore wholeness through guided constellation ceremonies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Sacred Healing Packages</h2>
+            <p class="section-subtitle">Choose the perfect constellation experience for your healing journey</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Discovery Session</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">150</span>
+                            <span class="period">/session</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 90-minute initial consultation</li>
+                            <li><i class="fas fa-check"></i> Family system assessment</li>
+                            <li><i class="fas fa-check"></i> Basic constellation exploration</li>
+                            <li><i class="fas fa-check"></i> Personalized healing insights</li>
+                            <li><i class="fas fa-check"></i> Follow-up email support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <button class="btn btn-primary book-btn" data-package="Discovery Session" data-price="150">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Deep Healing Package</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">450</span>
+                            <span class="period">/package</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 3 constellation sessions (2 hours each)</li>
+                            <li><i class="fas fa-check"></i> Comprehensive family dynamics analysis</li>
+                            <li><i class="fas fa-check"></i> Generational pattern identification</li>
+                            <li><i class="fas fa-check"></i> Guided healing ceremonies</li>
+                            <li><i class="fas fa-check"></i> Integration support between sessions</li>
+                            <li><i class="fas fa-check"></i> 30-day email support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <button class="btn btn-primary book-btn" data-package="Deep Healing Package" data-price="450">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Transformation Journey</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">850</span>
+                            <span class="period">/journey</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 6 constellation sessions (2.5 hours each)</li>
+                            <li><i class="fas fa-check"></i> Complete family system transformation</li>
+                            <li><i class="fas fa-check"></i> Ancestral healing work</li>
+                            <li><i class="fas fa-check"></i> Soul integration practices</li>
+                            <li><i class="fas fa-check"></i> Personalized healing rituals</li>
+                            <li><i class="fas fa-check"></i> 90-day comprehensive support</li>
+                            <li><i class="fas fa-check"></i> Monthly check-in calls</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <button class="btn btn-primary book-btn" data-package="Transformation Journey" data-price="850">Book Now</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -272,6 +357,56 @@
             </div>
         </div>
     </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Your Sacred Session</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="bookingName">Full Name *</label>
+                    <input type="text" id="bookingName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookingEmail">Email *</label>
+                    <input type="email" id="bookingEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookingPhone">Phone</label>
+                    <input type="tel" id="bookingPhone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="bookingPackage">Selected Package *</label>
+                    <input type="text" id="bookingPackage" name="package" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="bookingPrice">Price</label>
+                    <input type="text" id="bookingPrice" name="price" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="bookingDate">Preferred Date *</label>
+                    <input type="date" id="bookingDate" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookingTime">Preferred Time *</label>
+                    <select id="bookingTime" name="time" required>
+                        <option value="">Select Time</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bookingMessage">Your Intention for Healing</label>
+                    <textarea id="bookingMessage" name="message" rows="4" placeholder="Share what you hope to discover and heal through this constellation work..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
