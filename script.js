@@ -311,6 +311,194 @@ const dateInput = document.getElementById('bookingDate');
 const today = new Date().toISOString().split('T')[0];
 dateInput.setAttribute('min', today);
 
+// Language Translation System
+const translations = {
+    en: {
+        // Navigation
+        'home': 'Home',
+        'services': 'Services',
+        'pricing': 'Pricing',
+        'about': 'About',
+        'practitioner': 'Practitioner',
+        'contact': 'Contact',
+        
+        // Hero Section
+        'hero-title': 'Spiritual Family Healing Through Constellations',
+        'hero-subtitle': 'Discover the hidden dynamics in your family system. Experience deep healing through guided role-playing and spiritual exploration of generational patterns.',
+        'book-consultation': 'Book Consultation',
+        'learn-more': 'Learn More',
+        
+        // Services Section
+        'services-title': 'Sacred Healing Services',
+        'services-subtitle': 'Transform your family dynamics through spiritual constellation work and guided healing sessions',
+        'family-constellations': 'Family Constellations',
+        'family-constellations-desc': 'Sacred group sessions where participants represent family members, revealing hidden dynamics and facilitating deep healing through role-playing.',
+        'relationship-constellations': 'Relationship Constellations',
+        'relationship-constellations-desc': 'Deep exploration of relationship dynamics through spiritual role-playing, uncovering hidden patterns and facilitating soul-level healing.',
+        'generational-healing': 'Generational Healing',
+        'generational-healing-desc': 'Release inherited family patterns and trauma through guided constellation work, creating healing for future generations.',
+        'virtual-constellations': 'Virtual Constellations',
+        'virtual-constellations-desc': 'Experience the power of family constellations through sacred online sessions, connecting with the collective field from anywhere.',
+        'ancestral-wisdom': 'Ancestral Wisdom',
+        'ancestral-wisdom-desc': 'Connect with ancestral knowledge and wisdom through guided meditation and constellation work, honoring your family\'s spiritual lineage.',
+        'soul-integration': 'Soul Integration',
+        'soul-integration-desc': 'Deep spiritual work to integrate fragmented parts of the soul and restore wholeness through guided constellation ceremonies.',
+        
+        // Pricing Section
+        'pricing-title': 'Sacred Healing Packages',
+        'pricing-subtitle': 'Choose the perfect constellation experience for your healing journey',
+        'discovery-session': 'Discovery Session',
+        'deep-healing-package': 'Deep Healing Package',
+        'transformation-journey': 'Transformation Journey',
+        'most-popular': 'Most Popular',
+        'book-now': 'Book Now',
+        
+        // About Section
+        'about-title': 'About Sofia & Family Constellations',
+        'about-text-1': 'Sofia is a sacred facilitator of family constellation work, guiding individuals and families through deep spiritual healing. With over 15 years of experience in systemic family therapy and spiritual practices, she creates sacred spaces for transformation and healing.',
+        'about-text-2': 'Her approach honors the wisdom of the collective field, allowing hidden family dynamics to emerge through guided role-playing. Sofia believes every family carries the potential for profound healing when we honor the sacred order of love.',
+        'souls-transformed': 'Souls Transformed',
+        'years-experience': 'Years of Sacred Work',
+        'healing-rate': 'Healing Rate',
+        
+        // Team Section
+        'team-title': 'Your Sacred Guide',
+        'team-subtitle': 'Meet Sofia, your dedicated family constellation facilitator and spiritual guide',
+        'sofia-title': 'Sacred Family Constellation Facilitator',
+        'sofia-bio': 'Dedicated spiritual guide with over 15 years of experience in family constellation work, helping individuals and families discover hidden dynamics and facilitate deep healing through guided role-playing and spiritual exploration.',
+        
+        // Contact Section
+        'contact-title': 'Begin Your Sacred Journey',
+        'contact-subtitle': 'Ready to transform your family dynamics through spiritual constellation work? Connect with Sofia on Instagram to begin your healing journey.',
+        'connect-instagram': 'Connect on Instagram',
+        'sacred-space': 'Sacred Space',
+        'sacred-hours': 'Sacred Hours',
+        'instagram-contact-title': 'Connect with Sofia on Instagram',
+        'instagram-contact-desc': 'For bookings, inquiries, and to learn more about family constellations, please reach out to Sofia directly on Instagram.',
+        'message-instagram': 'Message @gypsiefamily',
+        
+        // Footer
+        'footer-title': 'Sofia\'s Family Constellations',
+        'footer-desc': 'Sacred family constellation work and spiritual healing to transform your family dynamics and restore harmony.',
+        'sacred-services': 'Sacred Services',
+        'quick-links': 'Quick Links',
+        'about-us': 'About Us',
+        'contact-info': 'Contact Info',
+        'privacy-policy': 'Privacy Policy',
+        'copyright': '© 2024 Sofia\'s Family Constellations. All rights reserved.'
+    },
+    ru: {
+        // Navigation
+        'home': 'Главная',
+        'services': 'Услуги',
+        'pricing': 'Цены',
+        'about': 'О нас',
+        'practitioner': 'Специалист',
+        'contact': 'Контакты',
+        
+        // Hero Section
+        'hero-title': 'Духовное исцеление семьи через расстановки',
+        'hero-subtitle': 'Откройте скрытую динамику в вашей семейной системе. Испытайте глубокое исцеление через направленную ролевую игру и духовное исследование родовых паттернов.',
+        'book-consultation': 'Записаться на консультацию',
+        'learn-more': 'Узнать больше',
+        
+        // Services Section
+        'services-title': 'Священные исцеляющие услуги',
+        'services-subtitle': 'Трансформируйте динамику вашей семьи через духовную работу с расстановками и направленные исцеляющие сессии',
+        'family-constellations': 'Семейные расстановки',
+        'family-constellations-desc': 'Священные групповые сессии, где участники представляют членов семьи, раскрывая скрытую динамику и облегчая глубокое исцеление через ролевую игру.',
+        'relationship-constellations': 'Расстановки отношений',
+        'relationship-constellations-desc': 'Глубокое исследование динамики отношений через духовную ролевую игру, раскрытие скрытых паттернов и облегчение исцеления на уровне души.',
+        'generational-healing': 'Родовое исцеление',
+        'generational-healing-desc': 'Освободитесь от унаследованных семейных паттернов и травм через направленную работу с расстановками, создавая исцеление для будущих поколений.',
+        'virtual-constellations': 'Виртуальные расстановки',
+        'virtual-constellations-desc': 'Испытайте силу семейных расстановок через священные онлайн-сессии, соединяясь с коллективным полем из любой точки мира.',
+        'ancestral-wisdom': 'Родовая мудрость',
+        'ancestral-wisdom-desc': 'Соединитесь с родовыми знаниями и мудростью через направленную медитацию и работу с расстановками, почитая духовную линию вашей семьи.',
+        'soul-integration': 'Интеграция души',
+        'soul-integration-desc': 'Глубокая духовная работа по интеграции фрагментированных частей души и восстановлению целостности через направленные церемонии расстановок.',
+        
+        // Pricing Section
+        'pricing-title': 'Священные исцеляющие пакеты',
+        'pricing-subtitle': 'Выберите идеальный опыт расстановок для вашего исцеляющего путешествия',
+        'discovery-session': 'Сессия открытия',
+        'deep-healing-package': 'Пакет глубокого исцеления',
+        'transformation-journey': 'Путь трансформации',
+        'most-popular': 'Самый популярный',
+        'book-now': 'Забронировать',
+        
+        // About Section
+        'about-title': 'О Софии и семейных расстановках',
+        'about-text-1': 'София - священный фасилитатор работы с семейными расстановками, направляющий людей и семьи через глубокое духовное исцеление. Имея более 15 лет опыта в системной семейной терапии и духовных практиках, она создает священные пространства для трансформации и исцеления.',
+        'about-text-2': 'Ее подход почитает мудрость коллективного поля, позволяя скрытой семейной динамике проявиться через направленную ролевую игру. София верит, что каждая семья несет потенциал для глубокого исцеления, когда мы почитаем священный порядок любви.',
+        'souls-transformed': 'Душ трансформировано',
+        'years-experience': 'Лет священной работы',
+        'healing-rate': 'Процент исцеления',
+        
+        // Team Section
+        'team-title': 'Ваш священный проводник',
+        'team-subtitle': 'Познакомьтесь с Софией, вашим преданным фасилитатором семейных расстановок и духовным проводником',
+        'sofia-title': 'Священный фасилитатор семейных расстановок',
+        'sofia-bio': 'Преданный духовный проводник с более чем 15-летним опытом работы с семейными расстановками, помогающий людям и семьям открывать скрытую динамику и облегчать глубокое исцеление через направленную ролевую игру и духовное исследование.',
+        
+        // Contact Section
+        'contact-title': 'Начните ваше священное путешествие',
+        'contact-subtitle': 'Готовы трансформировать динамику вашей семьи через духовную работу с расстановками? Свяжитесь с Софией в Instagram, чтобы начать ваше исцеляющее путешествие.',
+        'connect-instagram': 'Связаться в Instagram',
+        'sacred-space': 'Священное пространство',
+        'sacred-hours': 'Священные часы',
+        'instagram-contact-title': 'Свяжитесь с Софией в Instagram',
+        'instagram-contact-desc': 'Для бронирования, вопросов и получения дополнительной информации о семейных расстановках, пожалуйста, обращайтесь к Софии напрямую в Instagram.',
+        'message-instagram': 'Написать @gypsiefamily',
+        
+        // Footer
+        'footer-title': 'Семейные расстановки Софии',
+        'footer-desc': 'Священная работа с семейными расстановками и духовное исцеление для трансформации динамики вашей семьи и восстановления гармонии.',
+        'sacred-services': 'Священные услуги',
+        'quick-links': 'Быстрые ссылки',
+        'about-us': 'О нас',
+        'contact-info': 'Контактная информация',
+        'privacy-policy': 'Политика конфиденциальности',
+        'copyright': '© 2024 Семейные расстановки Софии. Все права защищены.'
+    }
+};
+
+// Language selector functionality
+const languageSelect = document.getElementById('languageSelect');
+if (languageSelect) {
+    languageSelect.addEventListener('change', function() {
+        const selectedLanguage = this.value;
+        translatePage(selectedLanguage);
+    });
+}
+
+function translatePage(language) {
+    const currentTranslations = translations[language] || translations.en;
+    
+    // Update navigation
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (currentTranslations[key]) {
+            element.textContent = currentTranslations[key];
+        }
+    });
+    
+    // Update specific elements
+    const elements = {
+        '.hero-title': 'hero-title',
+        '.hero-subtitle': 'hero-subtitle',
+        '.section-title': 'services-title',
+        '.section-subtitle': 'services-subtitle'
+    };
+    
+    Object.entries(elements).forEach(([selector, key]) => {
+        const element = document.querySelector(selector);
+        if (element && currentTranslations[key]) {
+            element.textContent = currentTranslations[key];
+        }
+    });
+}
+
 // Add some interactive features
 console.log('Sofia\'s Family Constellations website loaded successfully!');
-console.log('Features: Mobile navigation, smooth scrolling, form validation, booking system, animations');
+console.log('Features: Mobile navigation, smooth scrolling, form validation, booking system, language translation, animations');

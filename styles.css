@@ -24,11 +24,13 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(15px);
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 1.2rem 0;
     transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
 }
 
 .nav-container {
@@ -277,8 +279,19 @@ body {
 
 /* Services Section */
 .services {
-    padding: 5rem 0;
-    background: #f8f9fa;
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    position: relative;
+}
+
+.services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(102, 126, 234, 0.2) 50%, transparent 100%);
 }
 
 .services-grid {
@@ -328,12 +341,26 @@ body {
 
 .service-card p {
     color: #666;
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 1.05rem;
+    margin-top: 1rem;
 }
 
 /* About Section */
 .about {
-    padding: 5rem 0;
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    position: relative;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(102, 126, 234, 0.2) 50%, transparent 100%);
 }
 
 .about-content {
@@ -462,8 +489,9 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 3.2rem;
     font-weight: 600;
-    color: #667eea;
+    color: #ffffff;
     letter-spacing: -0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .period {
@@ -477,11 +505,13 @@ body {
 }
 
 .pricing-features li {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     text-align: left;
+    line-height: 1.6;
+    font-size: 1.05rem;
 }
 
 .pricing-features i {
@@ -574,8 +604,19 @@ body {
 
 /* Team Section */
 .team {
-    padding: 5rem 0;
-    background: #f8f9fa;
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    position: relative;
+}
+
+.team::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(102, 126, 234, 0.2) 50%, transparent 100%);
 }
 
 .team-grid {
@@ -635,7 +676,19 @@ body {
 
 /* Contact Section */
 .contact {
-    padding: 5rem 0;
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(102, 126, 234, 0.2) 50%, transparent 100%);
 }
 
 .contact-content {
