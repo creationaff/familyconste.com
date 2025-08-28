@@ -821,7 +821,7 @@ body {
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 2fr 1fr 1fr; /* brand + two columns */
     gap: 2rem;
     margin-bottom: 2rem;
 }
