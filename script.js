@@ -234,6 +234,18 @@ bookButtons.forEach(button => {
     });
 });
 
+// Hero booking button
+const heroBookBtn = document.querySelector('.hero-book-btn');
+if (heroBookBtn) {
+    heroBookBtn.addEventListener('click', () => {
+        document.getElementById('bookingPackage').value = 'Discovery Session';
+        document.getElementById('bookingPrice').value = '$150';
+        
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    });
+}
+
 // Close modal when X is clicked
 closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
