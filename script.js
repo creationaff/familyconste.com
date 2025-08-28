@@ -314,6 +314,7 @@ dateInput.setAttribute('min', today);
 // Language Translation System
 const translations = {
     en: {
+        'site-title': "Sofia's Family Constellations",
         // Navigation
         'home': 'Home',
         'services': 'Services',
@@ -388,6 +389,7 @@ const translations = {
         'copyright': '© 2024 Sofia\'s Family Constellations. All rights reserved.'
     },
     ru: {
+        'site-title': 'Семейные расстановки Софии',
         // Navigation
         'home': 'Главная',
         'services': 'Услуги',
@@ -462,6 +464,7 @@ const translations = {
         'copyright': '© 2024 Семейные расстановки Софии. Все права защищены.'
     },
     es: {
+        'site-title': 'Constelaciones Familiares de Sofía',
         // Navigation
         'home': 'Inicio',
         'services': 'Servicios',
@@ -536,6 +539,7 @@ const translations = {
         'copyright': '© 2024 Constelaciones Familiares de Sofía. Todos los derechos reservados.'
     },
     fr: {
+        'site-title': 'Constellations Familiales de Sofia',
         // Navigation
         'home': 'Accueil',
         'services': 'Services',
@@ -614,8 +618,14 @@ const translations = {
 // Language selector functionality
 const languageSelect = document.getElementById('languageSelect');
 if (languageSelect) {
+    // Initialize from localStorage
+    const savedLang = localStorage.getItem('sf_lang') || 'en';
+    languageSelect.value = savedLang;
+    translatePage(savedLang);
+
     languageSelect.addEventListener('change', function() {
         const selectedLanguage = this.value;
+        localStorage.setItem('sf_lang', selectedLanguage);
         translatePage(selectedLanguage);
     });
 }
@@ -748,9 +758,15 @@ function translatePage(language) {
         instagramDesc.textContent = currentTranslations['instagram-contact-desc'];
     }
     if (instagramBtn && currentTranslations['message-instagram']) {
-        instagramBtn.textContent = currentTranslations['message-instagram'];
+        instagramBtn.innerHTML = `<i class="fab fa-instagram"></i> ${currentTranslations['message-instagram']}`;
     }
     
+    // Update site title
+    const siteTitle = document.querySelector('[data-translate="site-title"]');
+    if (siteTitle && currentTranslations['site-title']) {
+        siteTitle.innerHTML = `<i class="fas fa-star"></i> ${currentTranslations['site-title']}`;
+    }
+
     // Update footer
     const footerTitle = document.querySelector('.footer-section h3');
     const footerDesc = document.querySelector('.footer-section p');
