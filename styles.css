@@ -97,6 +97,41 @@ body {
     transition: 0.3s;
 }
 
+/* Language Selector */
+.language-selector {
+    position: relative;
+}
+
+.language-dropdown {
+    background: transparent;
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    min-width: 140px;
+}
+
+.language-dropdown:hover {
+    border-color: #667eea;
+    background: rgba(102, 126, 234, 0.05);
+}
+
+.language-dropdown:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.language-dropdown option {
+    background: white;
+    color: #333;
+    padding: 10px;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -813,6 +848,11 @@ body {
 
     .nav-menu.active {
         left: 0;
+    }
+    
+    .language-dropdown {
+        min-width: 120px;
+        font-size: 0.85rem;
     }
 
     .hero-container {
