@@ -220,17 +220,18 @@ const bookButtons = document.querySelectorAll('.book-btn');
 const closeBtn = document.querySelector('.close');
 const bookingForm = document.getElementById('bookingForm');
 
-// Open modal when booking buttons are clicked
+// Book buttons → open Instagram profile with context
 bookButtons.forEach(button => {
     button.addEventListener('click', () => {
-        const package = button.getAttribute('data-package');
+        const pkg = button.getAttribute('data-package') || 'Consultation';
         const price = button.getAttribute('data-price');
-        
-        document.getElementById('bookingPackage').value = package;
-        document.getElementById('bookingPrice').value = `$${price}`;
-        
-        modal.style.display = 'block';
-        document.body.style.overflow = 'hidden';
+        const url = 'https://www.instagram.com/gypsiefamily/';
+        // Optional: we could copy a message to clipboard
+        try {
+            const message = `Hi Sofia, I'm interested in: ${pkg}${price ? ` ($${price})` : ''}.`;
+            navigator.clipboard && navigator.clipboard.writeText(message);
+        } catch (e) {}
+        window.open(url, '_blank');
     });
 });
 
@@ -251,69 +252,38 @@ if (heroBookBtn) {
 }
 
 // Close modal when X is clicked
-closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-});
+if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+}
 
 // Close modal when clicking outside
 window.addEventListener('click', (event) => {
-    if (event.target === modal) {
+    if (modal && event.target === modal) {
         modal.style.display = 'none';
         document.body.style.overflow = 'auto';
     }
 });
 
 // Handle booking form submission
-bookingForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const formData = new FormData(this);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const phone = formData.get('phone');
-    const package = formData.get('package');
-    const price = formData.get('price');
-    const date = formData.get('date');
-    const time = formData.get('time');
-    const message = formData.get('message');
-    
-    // Basic validation
-    if (!name || !email || !package || !date || !time) {
-        alert('Please fill in all required fields.');
-        return;
-    }
-    
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert('Please enter a valid email address.');
-        return;
-    }
-    
-    // Simulate booking submission
-    const submitButton = this.querySelector('button[type="submit"]');
-    const originalText = submitButton.textContent;
-    
-    submitButton.textContent = 'Processing...';
-    submitButton.disabled = true;
-    
-    // Simulate API call
-    setTimeout(() => {
-        alert(`Thank you for booking your sacred session!\n\nPackage: ${package}\nDate: ${date}\nTime: ${time}\n\nSofia will contact you within 24 hours to confirm your appointment and provide further details.`);
-        
-        this.reset();
+if (bookingForm) {
+    bookingForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const url = 'https://www.instagram.com/gypsiefamily/';
+        window.open(url, '_blank');
         modal.style.display = 'none';
         document.body.style.overflow = 'auto';
-        submitButton.textContent = originalText;
-        submitButton.disabled = false;
-    }, 2000);
-});
+    });
+}
 
 // Set minimum date to today
 const dateInput = document.getElementById('bookingDate');
-const today = new Date().toISOString().split('T')[0];
-dateInput.setAttribute('min', today);
+if (dateInput) {
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute('min', today);
+}
 
 // Language Translation System
 const translations = {
